@@ -1,0 +1,11 @@
+{
+    "accuracy": 0.8693123503250085,
+    "balanced_accuracy": 0.898216378904524,
+    "macro_f1": 0.7459760504284813,
+    "weighted_f1": 0.8872878161556081,
+    "jumlah_training": 6295,
+    "jumlah_testing": 5846,
+    "jumlah_fitur": 14,
+    "jumlah_poligon_training": 239,
+    "jumlah_poligon_testing": 60
+}

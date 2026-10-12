@@ -1,0 +1,23 @@
+﻿# Cache Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data satelit mentah
+data/sentinel2/
+
+# File model
+outputs/models/
+
+# Data training/testing besar
+outputs/reports/training.csv
+outputs/reports/testing.csv
+outputs/reports/training_balanced.csv
+
+# File sistem
+.DS_Store
+Thumbs.db
+
+# Rahasia aplikasi
+.streamlit/secrets.toml
