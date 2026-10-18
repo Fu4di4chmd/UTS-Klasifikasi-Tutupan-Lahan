@@ -1,19 +1,36 @@
-﻿# Cache Python
+﻿# Cache dan environment Python
 __pycache__/
 *.pyc
 .venv/
 venv/
 
-# Data satelit mentah
+# Data satelit dan raster sumber berukuran besar
 data/sentinel2/
+data/prediksi/
 
-# File model
+# Model Random Forest (disimpan secara lokal)
 outputs/models/
 
-# Data training/testing besar
+# Data training dan testing berukuran besar
 outputs/reports/training.csv
 outputs/reports/testing.csv
 outputs/reports/training_balanced.csv
+
+# File raster hasil prediksi
+outputs/maps/*.tif
+outputs/maps/*.tiff
+
+# Hasil koreksi sementara
+outputs/maps/*penyesuaian*
+outputs/maps/*pesisir*
+outputs/maps/*filter_mangrove*
+outputs/maps/mangrove_perlu_review.*
+
+# Script pemeriksaan dan eksperimen yang diarsipkan
+scripts/arsip_eksperimen/
+
+# File cadangan
+app_backup.py
 
 # File sistem
 .DS_Store

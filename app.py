@@ -46,6 +46,8 @@ REPORTS = BASE / "outputs" / "reports"
 CHARTS = BASE / "outputs" / "charts"
 
 MAPS = BASE / "outputs" / "maps"
+EXPERIMENT_REPORTS = REPORTS / "eksperimen_sampling_poligon"
+EXPERIMENT_MAP = MAPS / "peta_interaktif_rf_sampling_poligon.html"
 
 
 # ============================================================
@@ -118,7 +120,7 @@ st.markdown("""
 
 def baca_metrics():
 
-    path = REPORTS / "metrics.json"
+    path = EXPERIMENT_REPORTS / "metrics.json"
 
 
     if not path.exists():
@@ -135,8 +137,10 @@ def baca_metrics():
 
 def baca_csv(nama):
 
-    path = REPORTS / nama
-
+    # Laporan evaluasi harus dari eksperimen; metadata umum boleh dari laporan utama.
+    path = EXPERIMENT_REPORTS / nama
+    if nama in ("distribusi_geojson.csv", "informasi_band.csv") and not path.exists():
+        path = REPORTS / nama
 
     if not path.exists():
 
@@ -150,7 +154,7 @@ def baca_csv(nama):
 
 def baca_peta():
 
-    path = MAPS / "peta_interaktif.html"
+    path = EXPERIMENT_MAP
 
 
     if not path.exists():
@@ -179,6 +183,9 @@ def tampil_grafik(nama_file, judul):
 
 
 metrics = baca_metrics()
+if metrics is None:
+    st.error("Metrik model eksperimen belum tersedia di outputs/reports/eksperimen_sampling_poligon/metrics.json. Jalankan script eksperimen training terlebih dahulu.")
+    st.stop()
 
 
 # ============================================================
@@ -276,7 +283,7 @@ if halaman == "Beranda":
     c1, c2, c3, c4 = st.columns(4)
 
 
-    c1.metric("Poligon GeoJSON", "302")
+    c1.metric("Poligon GeoJSON", "328")
 
     c2.metric("Kelas Tutupan Lahan", "5")
 
@@ -359,7 +366,7 @@ if halaman == "Beranda":
 
     st.info(
 
-        "Peta GeoJSON menunjukkan hasil digitasi manual. "
+        "Peta interaktif memisahkan sampel digitasi dan hasil prediksi. "
 
         "Nilai akurasi berasal dari evaluasi prediksi "
 
@@ -495,10 +502,10 @@ elif halaman == "Data Understanding":
     **Citra:** Sentinel-2 Level-2A
 
 
-    **Sumber:** Copernicus Browser
+    **Sumber:** Sentinel-2 SR Harmonized melalui Google Earth Engine untuk komposit model; citra unduhan Copernicus Browser juga tersedia dalam proyek
 
 
-    **Tanggal citra:** 1 Oktober 2026
+    **Periode komposit Sentinel-2 untuk model:** Januari–September 2026 (median citra)
 
 
     **Wilayah:** Area kajian di Jawa Timur
@@ -507,10 +514,10 @@ elif halaman == "Data Understanding":
     **CRS raster:** EPSG:32749
 
 
-    **Resolusi TIFF hasil ekspor:** sekitar 93,44 meter/piksel
+    **Resolusi raster komposit klasifikasi:** 100 meter/piksel (citra TIFF terpisah dari Copernicus Browser sekitar 93,44 meter/piksel)
 
 
-    **Data referensi:** 302 poligon GeoJSON hasil digitasi
+    **Data referensi:** 328 poligon GeoJSON hasil digitasi
 
     """)
 
@@ -571,7 +578,7 @@ elif halaman == "Data Understanding":
 
         ],
 
-        "Jumlah Poligon": [72, 80, 50, 50, 50]
+        "Jumlah Poligon": [72, 80, 53, 50, 73]
 
     })
 
@@ -729,20 +736,20 @@ elif halaman == "Data Preparation":
     c1, c2, c3 = st.columns(3)
 
 
-    c1.metric("Sampel Piksel Valid", "55.008")
+    c1.metric("Sampel Piksel Valid", "48.290")
 
-    c2.metric("Poligon Aktif", "299")
+    c2.metric("Poligon Aktif", "313")
 
     c3.metric("Jumlah Fitur", "14")
 
 
     st.write("""
 
-    Dari 302 poligon awal, terdapat 299 poligon
+    Dari 328 poligon awal, terdapat 313 poligon
 
     yang menghasilkan sampel piksel valid.
 
-    Tiga poligon lainnya tidak menghasilkan sampel
+    Lima belas poligon lainnya tidak menghasilkan sampel
 
     piksel yang memenuhi kriteria pengolahan.
 
@@ -901,6 +908,10 @@ elif halaman == "Random Forest":
 
     training dibatasi maksimal 2.000 piksel per kelas.
 
+    **Khusus Forest,** 2.000 piksel dipilih lebih merata antarpoligon
+
+    training. Kelas lainnya menggunakan sampling acak seperti sebelumnya.
+
 
     Strategi ini hanya diterapkan pada training.
 
@@ -929,9 +940,8 @@ elif halaman == "Random Forest":
 
     st.info(
 
-        "Hasil model disimpan dalam file "
-
-        "random_forest_model.joblib."
+        "Model yang ditampilkan: Random Forest eksperimen sampling Forest per poligon. "
+        "File: random_forest_model_sampling_poligon.joblib."
 
     )
 
@@ -998,83 +1008,65 @@ elif halaman == "Evaluation":
     st.divider()
 
 
-    tampil_grafik(
-
-        "evaluasi_model.png",
-
-        "Perbandingan Metrik Evaluasi"
-
-    )
-
-
-    st.divider()
-
-
-    tampil_grafik(
-
-        "confusion_matrix.png",
-
-        "Confusion Matrix"
-
-    )
-
+    # Semua grafik berikut dibangun langsung dari laporan model eksperimen.
+    # Jangan menggunakan PNG outputs/charts lama: PNG itu milik model awal.
+    st.subheader("Perbandingan Metrik Evaluasi")
+    ringkasan = pd.DataFrame({
+        "Metrik": ["Accuracy", "Balanced Accuracy", "Macro F1", "Weighted F1"],
+        "Skor (%)": [100 * metrics[k] for k in
+                     ["accuracy", "balanced_accuracy", "macro_f1", "weighted_f1"]]
+    }).set_index("Metrik")
+    st.bar_chart(ringkasan)
 
     st.divider()
-
-
-    tampil_grafik(
-
-        "performa_per_kelas.png",
-
-        "Performa Setiap Kelas"
-
-    )
-
+    st.subheader("Confusion Matrix — Model Eksperimen")
+    cm = baca_csv("confusion_matrix.csv")
+    if cm is not None:
+        if cm.columns[0].startswith("Unnamed:"):
+            cm = cm.set_index(cm.columns[0])
+        st.dataframe(cm, use_container_width=True)
+    else:
+        st.warning("Confusion matrix eksperimen belum tersedia.")
 
     st.divider()
-
-
-    tampil_grafik(
-
-        "feature_importance.png",
-
-        "Feature Importance"
-
-    )
-
-
-    st.divider()
-
-
-    tampil_grafik(
-
-        "distribusi_sampel.png",
-
-        "Distribusi Sampel Training dan Testing"
-
-    )
-
-
-    st.divider()
-
-
-    st.header("Classification Report")
-
-
+    st.subheader("Performa Setiap Kelas")
     report = baca_csv("classification_report.csv")
-
-
     if report is not None:
+        if report.columns[0].startswith("Unnamed:"):
+            report = report.rename(columns={report.columns[0]: "Kelas"})
+        nama_kolom = "Kelas" if "Kelas" in report.columns else report.columns[0]
+        kelas_saja = report[report[nama_kolom].isin(
+            ["build up", "farm land", "water body", "forest", "mangrove"]
+        )]
+        if not kelas_saja.empty:
+            st.bar_chart(kelas_saja.set_index(nama_kolom)[["precision", "recall", "f1-score"]])
 
-        st.dataframe(
+    st.divider()
+    st.subheader("Feature Importance")
+    fi = baca_csv("feature_importance.csv")
+    if fi is not None and {"Feature", "Importance"}.issubset(fi.columns):
+        st.bar_chart(fi.set_index("Feature")["Importance"])
 
-            report,
+    st.divider()
+    st.subheader("Distribusi Sampel Training dan Testing")
+    train_balanced = baca_csv("training_balanced.csv")
+    testing_path = REPORTS / "testing.csv"
+    if train_balanced is not None and testing_path.exists():
+        testing_df = pd.read_csv(testing_path, usecols=["label"])
+        distribusi = pd.concat([
+            train_balanced["label"].value_counts().rename("Training"),
+            testing_df["label"].value_counts().rename("Testing")
+        ], axis=1).fillna(0).astype(int)
+        st.bar_chart(distribusi)
+    else:
+        st.warning("Data distribusi training/testing belum tersedia.")
 
-            use_container_width=True,
-
-            hide_index=True
-
-        )
+    st.divider()
+    st.header("Classification Report — Model Eksperimen")
+    if report is not None:
+        st.dataframe(report, use_container_width=True, hide_index=True)
+    else:
+        st.warning("Classification report eksperimen belum tersedia.")
 
 
     st.header("Interpretasi")
@@ -1120,90 +1112,43 @@ elif halaman == "Evaluation":
 
 elif halaman == "Peta Interaktif":
 
-
-    st.title("Peta Interaktif Tutupan Lahan")
-
-
-    st.write("""
-
-    Peta menampilkan **302 poligon GeoJSON hasil
-
-    digitasi** di atas citra Sentinel-2 True Color.
-
-
-    Gunakan checkbox pada sudut kanan atas peta
-
-    untuk menampilkan atau menyembunyikan masing-masing
-
-    kelas tutupan lahan.
-
-    """)
-
-
-    html = baca_peta()
-
-
-    if html is None:
-
-        st.error(
-
-            "Peta HTML tidak ditemukan. "
-
-            "Jalankan scripts/05_create_map.py terlebih dahulu."
-
-        )
-
-    else:
-
-        components.html(
-
-            html,
-
-            height=780,
-
-            scrolling=False
-
-        )
-
+    st.title("Peta Interaktif Tutupan Lahan Jawa Timur")
+    st.write(
+        "Hasil **prediksi Random Forest** dan **poligon sampel GeoJSON** "
+        "ditampilkan dalam layer terpisah, seperti peta referensi. "
+        "Pilih basemap citra Esri atau citra Sentinel-2 "
+        "melalui kontrol di kanan atas. Centang kelas yang ingin dilihat."
+    )
 
     st.caption(
-
-        "Sumber: Sentinel-2 Copernicus Browser "
-
-        "dan GeoJSON hasil digitasi."
-
+        "Peta yang ditampilkan berasal dari model eksperimen sampling Forest per poligon. "
+        "Prediksi mencakup lima kelas: Built-up, Farmland, Water Body, "
+        "Forest, dan Mangrove. Lapisan sampel menunjukkan data digitasi, "
+        "bukan hasil prediksi."
     )
 
-
-    st.info(
-
-        "Warna poligon pada peta adalah label "
-
-        "hasil digitasi manual. Peta ini tidak "
-
-        "menampilkan prediksi Random Forest "
-
-        "untuk seluruh wilayah."
-
-    )
-
-
-    path_peta = MAPS / "peta_interaktif.html"
-
-
-    if path_peta.exists():
-
-        st.download_button(
-
-            label="Download Peta HTML",
-
-            data=path_peta.read_bytes(),
-
-            file_name="peta_tutupan_lahan_jatim.html",
-
-            mime="text/html"
-
+    html = baca_peta()
+    if html is None:
+        st.error(
+            "Peta hasil Random Forest belum tersedia. "
+            "Jalankan: py -3.9 scripts/10_peta_interaktif_rf.py"
         )
+    else:
+        components.html(html, height=800, scrolling=False)
+        path_peta = EXPERIMENT_MAP
+        st.download_button(
+            "Download Peta Interaktif HTML",
+            data=path_peta.read_bytes(),
+            file_name="peta_interaktif_rf_sampling_poligon.html",
+            mime="text/html",
+        )
+
+    st.warning(
+        "Peta klasifikasi merupakan hasil prediksi murni model RF sampling per poligon, tanpa koreksi kelas manual. "
+        "Sebagian prediksi Water Body di pegunungan serta Mangrove "
+        "di luar kawasan pesisir masih perlu validasi geografis. "
+        "Akurasi testing bukan akurasi untuk seluruh wilayah Jawa Timur."
+    )
 
 
 # ============================================================
@@ -1230,7 +1175,7 @@ elif halaman == "Kesimpulan":
     pada wilayah kajian Jawa Timur.
 
 
-    Data yang digunakan terdiri atas 302 poligon
+    Data yang digunakan terdiri atas 328 poligon
 
     GeoJSON dengan lima kelas tutupan lahan.
 
@@ -1308,9 +1253,15 @@ elif halaman == "Kesimpulan":
 
       tidak seimbang.
 
-    - Peta GeoJSON adalah visualisasi sampel
+    - Peta RF merupakan prediksi pada cakupan raster,
 
-      digitasi, bukan peta prediksi menyeluruh.
+      tetapi kesalahan spasial Water Body, Built-up, dan Mangrove
+
+      masih perlu divalidasi. Akurasi testing bukan akurasi
+
+      seluruh wilayah Jawa Timur. Lima kelas tidak mencakup
+
+      semua jenis tutupan seperti batuan dan lahan terbuka.
 
     """)
 

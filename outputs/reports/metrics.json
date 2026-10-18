@@ -1,11 +1,11 @@
 {
-    "accuracy": 0.8693123503250085,
-    "balanced_accuracy": 0.898216378904524,
-    "macro_f1": 0.7459760504284813,
-    "weighted_f1": 0.8872878161556081,
-    "jumlah_training": 6295,
-    "jumlah_testing": 5846,
+    "accuracy": 0.9776839565741857,
+    "balanced_accuracy": 0.9595330292579488,
+    "macro_f1": 0.9375205905916811,
+    "weighted_f1": 0.9784490511982971,
+    "jumlah_training": 6466,
+    "jumlah_testing": 4974,
     "jumlah_fitur": 14,
-    "jumlah_poligon_training": 239,
-    "jumlah_poligon_testing": 60
+    "jumlah_poligon_training": 250,
+    "jumlah_poligon_testing": 63
 }
