@@ -1,0 +1,148 @@
+{
+  "blok_terpilih": "B_32_459",
+  "jumlah_poligon": 68,
+  "jumlah_kelas": 4,
+  "distribusi_kelas": {
+    "build up": 2,
+    "farm land": 57,
+    "water body": 8,
+    "forest": 1,
+    "mangrove": 0
+  },
+  "bbox_utm": [
+    640000.0,
+    9180000.0,
+    660000.0,
+    9200000.0
+  ],
+  "bbox_lonlat": [
+    112.2680762,
+    -7.4165724,
+    112.4497773,
+    -7.23516
+  ],
+  "crs_blok": "EPSG:32749",
+  "resolusi_rencana_meter": 20,
+  "ids_poligon": [
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    140,
+    141,
+    142,
+    143,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    244,
+    245
+  ],
+  "catatan": "Blok ini dipilih berdasarkan persebaran sampel, bukan berdasarkan akurasi model. GeoJSON sampel belum dipotong ke batas blok.",
+  "lima_kandidat_terbaik": [
+    {
+      "blok_id": "B_32_459",
+      "jumlah_kelas": 4,
+      "jumlah_poligon": 68,
+      "distribusi": {
+        "water body": 8,
+        "forest": 1,
+        "farm land": 57,
+        "build up": 2
+      }
+    },
+    {
+      "blok_id": "B_34_459",
+      "jumlah_kelas": 3,
+      "jumlah_poligon": 43,
+      "distribusi": {
+        "water body": 2,
+        "build up": 38,
+        "mangrove": 3
+      }
+    },
+    {
+      "blok_id": "B_34_460",
+      "jumlah_kelas": 3,
+      "jumlah_poligon": 31,
+      "distribusi": {
+        "water body": 8,
+        "build up": 18,
+        "mangrove": 5
+      }
+    },
+    {
+      "blok_id": "B_33_459",
+      "jumlah_kelas": 2,
+      "jumlah_poligon": 21,
+      "distribusi": {
+        "farm land": 6,
+        "build up": 15
+      }
+    },
+    {
+      "blok_id": "B_31_459",
+      "jumlah_kelas": 2,
+      "jumlah_poligon": 18,
+      "distribusi": {
+        "forest": 4,
+        "farm land": 14
+      }
+    }
+  ]
+}

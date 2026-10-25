@@ -1,0 +1,40 @@
+{
+  "raster_masuk": 195,
+  "hasil": "D:\\PSd\\PSD_Uts\\UTS_Klasifikasi_Jawa_Timur\\outputs\\maps\\klasifikasi_jawa_timur_20m.tif",
+  "crs": "EPSG:32749",
+  "resolusi_meter": 20,
+  "ukuran_piksel": [
+    31013,
+    22016
+  ],
+  "luas_terklasifikasi_km2": 46978.692,
+  "kelas": {
+    "Built-up": {
+      "kode": 1,
+      "piksel": 9449508,
+      "luas_km2": 3779.803
+    },
+    "Farm Land": {
+      "kode": 2,
+      "piksel": 42364803,
+      "luas_km2": 16945.921
+    },
+    "Water Body": {
+      "kode": 3,
+      "piksel": 3483216,
+      "luas_km2": 1393.286
+    },
+    "Forest": {
+      "kode": 4,
+      "piksel": 61415679,
+      "luas_km2": 24566.272
+    },
+    "Mangrove": {
+      "kode": 5,
+      "piksel": 733524,
+      "luas_km2": 293.41
+    }
+  },
+  "nodata_pixels": 565335478,
+  "catatan": "Kelas 0 mencakup luar provinsi dan piksel tanpa data. Luas adalah luas planar EPSG:32749."
+}

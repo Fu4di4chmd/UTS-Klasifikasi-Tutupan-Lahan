@@ -1,0 +1,32 @@
+id_poligon,aktual,prediksi,jumlah_piksel
+29,water body,water body,106
+31,water body,water body,4
+33,water body,water body,108
+50,forest,forest,300
+88,forest,forest,300
+90,forest,forest,300
+95,farm land,farm land,300
+97,farm land,farm land,300
+99,farm land,farm land,300
+100,farm land,farm land,300
+101,farm land,farm land,300
+107,farm land,farm land,194
+110,farm land,farm land,300
+128,farm land,farm land,128
+129,farm land,farm land,120
+133,farm land,farm land,117
+137,farm land,farm land,44
+141,farm land,farm land,300
+146,build up,build up,300
+152,build up,build up,283
+155,build up,build up,146
+167,build up,build up,300
+170,build up,build up,276
+174,build up,build up,253
+178,build up,build up,77
+180,build up,build up,253
+182,build up,build up,98
+183,build up,build up,148
+188,build up,build up,235
+228,build up,build up,300
+300,mangrove,mangrove,121

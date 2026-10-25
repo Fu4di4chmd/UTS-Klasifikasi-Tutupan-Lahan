@@ -1,0 +1,14 @@
+﻿indikator,jumlah_piksel
+total_valid_comparable,4795772
+old_mangrove,47410
+new_mangrove,61729
+both_mangrove,39175
+added_mangrove,22554
+removed_mangrove,8235
+valid_dem_pixels,4795772
+old_mangrove_dem_valid,47410
+new_mangrove_dem_valid,61729
+old_mangrove_above_300m,6806
+new_mangrove_above_300m,9400
+added_mangrove_above_300m,4676
+removed_mangrove_above_300m,2082

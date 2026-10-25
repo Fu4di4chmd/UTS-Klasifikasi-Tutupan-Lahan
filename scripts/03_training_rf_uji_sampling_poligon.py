@@ -1,5 +1,5 @@
 # ============================================================
-# EKSPERIMEN TRAINING RANDOM FOREST - SAMPLING FOREST PER POLIGON
+# EKSPERIMEN TRAINING RANDOM FOREST - FITUR MANGROVE BARU
 # Menyimpan model dan laporan terpisah (tidak menimpa baseline).
 # Jalankan: py -3.9 scripts/03_training_rf_uji_sampling_poligon.py
 # ============================================================
@@ -21,16 +21,18 @@ from sklearn.metrics import (
 
 BASE = Path(__file__).resolve().parent.parent
 REPORT_DIR = BASE / 'outputs' / 'reports'
-EXPERIMENT_DIR = REPORT_DIR / 'eksperimen_sampling_poligon'
+# Menggunakan folder yang sama dengan output preprocessing
+EXPERIMENT_DIR = REPORT_DIR / 'eksperimen_mangrove_17fitur'
 MODEL_DIR = BASE / 'outputs' / 'models'
 EXPERIMENT_DIR.mkdir(parents=True, exist_ok=True)
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
-TRAIN_PATH = REPORT_DIR / 'training.csv'
-TEST_PATH = REPORT_DIR / 'testing.csv'
-MODEL_PATH = MODEL_DIR / 'random_forest_model_sampling_poligon.joblib'
+TRAIN_PATH = EXPERIMENT_DIR / 'training_17fitur.csv'
+TEST_PATH = EXPERIMENT_DIR / 'testing_17fitur.csv'
+MODEL_PATH = MODEL_DIR / 'random_forest_model_mangrove_17fitur.joblib'
 
 BANDS = ['B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B8A', 'B11', 'B12']
-INDEKS = ['NDVI', 'NDMI', 'MNDWI', 'NDBI']
+# --- PERBAIKAN: Menambahkan MANGROVE_8A_11 dan VEG_8A_4 ke dalam model ---
+INDEKS = ['NDVI', 'NDMI', 'MNDWI', 'NDBI', 'NDWI', 'MVI', 'REMI', 'MANGROVE_8A_11', 'VEG_8A_4']
 FEATURES = BANDS + INDEKS
 CLASSES = ['build up', 'farm land', 'water body', 'forest', 'mangrove']
 MAX_SAMPLES = 2000
@@ -39,7 +41,7 @@ SEED = 42
 train_df = pd.read_csv(TRAIN_PATH)
 test_df = pd.read_csv(TEST_PATH)
 print('=' * 60)
-print('EKSPERIMEN RANDOM FOREST - SAMPLING FOREST PER POLIGON')
+print('EKSPERIMEN RANDOM FOREST - FITUR MANGROVE BARU')
 print('=' * 60)
 print('Training awal:', train_df.shape)
 print('Testing:', test_df.shape)
@@ -163,6 +165,10 @@ metrics = {
     'jumlah_training': int(len(balanced_df)),
     'jumlah_testing': int(len(test_df)),
     'jumlah_fitur': len(FEATURES),
+    'fitur': FEATURES,
+    'precision_mangrove': float(report_df.loc['mangrove','precision']),
+    'recall_mangrove': float(report_df.loc['mangrove','recall']),
+    'f1_mangrove': float(report_df.loc['mangrove','f1-score']),
     'jumlah_poligon_training': len(train_ids),
     'jumlah_poligon_testing': len(test_ids),
     'metode': 'forest sampling merata per polygon_id; kelas lain random sample',
@@ -175,5 +181,4 @@ print('\n' + '=' * 60)
 print('EKSPERIMEN SELESAI')
 print('Model eksperimen:', MODEL_PATH)
 print('Laporan eksperimen:', EXPERIMENT_DIR)
-print('Model utama dan laporan utama TIDAK diubah.')
 print('Data testing tidak diubah; tidak ada kebocoran poligon.')

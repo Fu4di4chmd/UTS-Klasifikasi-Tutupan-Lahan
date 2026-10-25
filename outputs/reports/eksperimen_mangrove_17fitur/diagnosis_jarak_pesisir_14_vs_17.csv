@@ -1,0 +1,21 @@
+﻿kelompok,indikator,kategori,piksel,total_kelompok,persen_dari_kelompok
+14 fitur,jarak_pantai,0–2 km,14878,47410,31.38
+14 fitur,jarak_pantai,2–5 km,5118,47410,10.8
+14 fitur,jarak_pantai,5–10 km,3368,47410,7.1
+14 fitur,jarak_pantai,>10 km,24046,47410,50.72
+14 fitur,elevasi,>300 m,6806,47410,14.36
+17 fitur,jarak_pantai,0–2 km,3897,7727,50.43
+17 fitur,jarak_pantai,2–5 km,1463,7727,18.93
+17 fitur,jarak_pantai,5–10 km,473,7727,6.12
+17 fitur,jarak_pantai,>10 km,1894,7727,24.51
+17 fitur,elevasi,>300 m,209,7727,2.7
+Mangrove bertambah,jarak_pantai,0–2 km,17,80,21.25
+Mangrove bertambah,jarak_pantai,2–5 km,19,80,23.75
+Mangrove bertambah,jarak_pantai,5–10 km,8,80,10.0
+Mangrove bertambah,jarak_pantai,>10 km,36,80,45.0
+Mangrove bertambah,elevasi,>300 m,9,80,11.25
+Mangrove berkurang,jarak_pantai,0–2 km,10998,39763,27.66
+Mangrove berkurang,jarak_pantai,2–5 km,3674,39763,9.24
+Mangrove berkurang,jarak_pantai,5–10 km,2903,39763,7.3
+Mangrove berkurang,jarak_pantai,>10 km,22188,39763,55.8
+Mangrove berkurang,elevasi,>300 m,6606,39763,16.61

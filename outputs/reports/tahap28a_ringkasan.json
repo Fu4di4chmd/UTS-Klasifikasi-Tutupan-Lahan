@@ -1,0 +1,17 @@
+{
+  "jumlah_features_geojson": 335,
+  "jumlah_poligon_valid": 335,
+  "jumlah_poligon_bermasalah": 0,
+  "jumlah_per_kelas": {
+    "water body": 53,
+    "forest": 50,
+    "farm land": 80,
+    "build up": 72,
+    "mangrove": 80
+  },
+  "jumlah_blok_20km": 39,
+  "ukuran_blok_meter": 20000,
+  "crs_blok": "EPSG:32749",
+  "catatan": "Blok hanya untuk merencanakan pengambilan citra di sekitar sampel. Belum mewakili seluruh area klasifikasi Jawa Timur.",
+  "masalah": []
+}

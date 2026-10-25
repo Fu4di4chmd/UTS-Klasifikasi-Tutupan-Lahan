@@ -38,3 +38,15 @@ Thumbs.db
 
 # Rahasia aplikasi
 .streamlit/secrets.toml
+# Raster Sentinel-2 dan hasil pengolahan besar
+data/prediksi/
+scripts/data/
+outputs/maps/klasifikasi_20m/
+outputs/maps/peta_interaktif_jatim/
+outputs/maps/*.tif
+
+# File sementara dan log
+outputs/logs/
+__pycache__/
+*.pyc
+

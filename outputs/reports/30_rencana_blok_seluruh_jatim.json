@@ -1,0 +1,1765 @@
+{
+  "crs": "EPSG:32749",
+  "ukuran_blok_meter": 20000,
+  "jumlah_blok": 195,
+  "komposit_tersedia": 5,
+  "komposit_belum": 190,
+  "luas_geometri_km2": 47947.16,
+  "blok": [
+    {
+      "blok_id": "B_24_454",
+      "xmin_utm": 480000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 500000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 106.03,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_24_455",
+      "xmin_utm": 480000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 500000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 59.197,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_25_454",
+      "xmin_utm": 500000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 520000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 249.371,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_25_455",
+      "xmin_utm": 500000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 520000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 232.59,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_25_456",
+      "xmin_utm": 500000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 520000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 15.569,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_25_457",
+      "xmin_utm": 500000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 520000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 0.091,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_25_458",
+      "xmin_utm": 500000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 520000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 84.885,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_25_459",
+      "xmin_utm": 500000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 520000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 81.669,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_26_454",
+      "xmin_utm": 520000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 540000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 267.766,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_26_455",
+      "xmin_utm": 520000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 540000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_26_456",
+      "xmin_utm": 520000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 540000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 186.381,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_26_457",
+      "xmin_utm": 520000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 540000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 340.57,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_26_458",
+      "xmin_utm": 520000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 540000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_26_459",
+      "xmin_utm": 520000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 540000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 271.097,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_453",
+      "xmin_utm": 540000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 3.171,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_454",
+      "xmin_utm": 540000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 336.927,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_455",
+      "xmin_utm": 540000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_456",
+      "xmin_utm": 540000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_457",
+      "xmin_utm": 540000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_458",
+      "xmin_utm": 540000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_459",
+      "xmin_utm": 540000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 233.706,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_27_460",
+      "xmin_utm": 540000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 560000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 2.862,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_453",
+      "xmin_utm": 560000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 41.089,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_454",
+      "xmin_utm": 560000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 389.349,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_455",
+      "xmin_utm": 560000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_456",
+      "xmin_utm": 560000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": true
+    },
+    {
+      "blok_id": "B_28_457",
+      "xmin_utm": 560000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_458",
+      "xmin_utm": 560000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_459",
+      "xmin_utm": 560000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": true
+    },
+    {
+      "blok_id": "B_28_460",
+      "xmin_utm": 560000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 324.216,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_461",
+      "xmin_utm": 560000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 297.927,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_28_462",
+      "xmin_utm": 560000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 580000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 119.164,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_453",
+      "xmin_utm": 580000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 5.096,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_454",
+      "xmin_utm": 580000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 316.063,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_455",
+      "xmin_utm": 580000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_456",
+      "xmin_utm": 580000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_457",
+      "xmin_utm": 580000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_458",
+      "xmin_utm": 580000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_459",
+      "xmin_utm": 580000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_460",
+      "xmin_utm": 580000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_461",
+      "xmin_utm": 580000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_29_462",
+      "xmin_utm": 580000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 600000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 193.613,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_453",
+      "xmin_utm": 600000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 0.031,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_454",
+      "xmin_utm": 600000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 356.429,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_455",
+      "xmin_utm": 600000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_456",
+      "xmin_utm": 600000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_457",
+      "xmin_utm": 600000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_458",
+      "xmin_utm": 600000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_459",
+      "xmin_utm": 600000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_460",
+      "xmin_utm": 600000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_461",
+      "xmin_utm": 600000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 391.544,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_30_462",
+      "xmin_utm": 600000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 620000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 128.402,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_453",
+      "xmin_utm": 620000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 19.093,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_454",
+      "xmin_utm": 620000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 397.237,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_455",
+      "xmin_utm": 620000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_456",
+      "xmin_utm": 620000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_457",
+      "xmin_utm": 620000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_458",
+      "xmin_utm": 620000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_459",
+      "xmin_utm": 620000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_460",
+      "xmin_utm": 620000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_461",
+      "xmin_utm": 620000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 366.595,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_31_462",
+      "xmin_utm": 620000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 640000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 0.449,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_453",
+      "xmin_utm": 640000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 85.968,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_454",
+      "xmin_utm": 640000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_455",
+      "xmin_utm": 640000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_456",
+      "xmin_utm": 640000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_457",
+      "xmin_utm": 640000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_458",
+      "xmin_utm": 640000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_459",
+      "xmin_utm": 640000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": true
+    },
+    {
+      "blok_id": "B_32_460",
+      "xmin_utm": 640000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_461",
+      "xmin_utm": 640000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 399.243,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_32_462",
+      "xmin_utm": 640000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 660000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 7.878,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_453",
+      "xmin_utm": 660000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 194.243,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_454",
+      "xmin_utm": 660000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_455",
+      "xmin_utm": 660000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_456",
+      "xmin_utm": 660000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_457",
+      "xmin_utm": 660000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_458",
+      "xmin_utm": 660000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_459",
+      "xmin_utm": 660000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_460",
+      "xmin_utm": 660000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 397.311,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_461",
+      "xmin_utm": 660000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 334.191,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_462",
+      "xmin_utm": 660000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 13.724,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_467",
+      "xmin_utm": 660000,
+      "ymin_utm": 9340000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9360000,
+      "luas_irisan_km2": 37.142,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_33_468",
+      "xmin_utm": 660000,
+      "ymin_utm": 9360000,
+      "xmax_utm": 680000,
+      "ymax_utm": 9380000,
+      "luas_irisan_km2": 10.07,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_453",
+      "xmin_utm": 680000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 231.619,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_454",
+      "xmin_utm": 680000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_455",
+      "xmin_utm": 680000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_456",
+      "xmin_utm": 680000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_457",
+      "xmin_utm": 680000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_458",
+      "xmin_utm": 680000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_459",
+      "xmin_utm": 680000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 397.322,
+      "komposit_tersedia": true
+    },
+    {
+      "blok_id": "B_34_460",
+      "xmin_utm": 680000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 242.889,
+      "komposit_tersedia": true
+    },
+    {
+      "blok_id": "B_34_461",
+      "xmin_utm": 680000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 76.323,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_467",
+      "xmin_utm": 680000,
+      "ymin_utm": 9340000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9360000,
+      "luas_irisan_km2": 78.961,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_34_468",
+      "xmin_utm": 680000,
+      "ymin_utm": 9360000,
+      "xmax_utm": 700000,
+      "ymax_utm": 9380000,
+      "luas_irisan_km2": 71.11,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_453",
+      "xmin_utm": 700000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 125.741,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_454",
+      "xmin_utm": 700000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 399.984,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_455",
+      "xmin_utm": 700000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_456",
+      "xmin_utm": 700000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_457",
+      "xmin_utm": 700000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 349.652,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_458",
+      "xmin_utm": 700000,
+      "ymin_utm": 9160000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9180000,
+      "luas_irisan_km2": 81.602,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_459",
+      "xmin_utm": 700000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 53.556,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_460",
+      "xmin_utm": 700000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 280.061,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_35_461",
+      "xmin_utm": 700000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 720000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 342.287,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_36_454",
+      "xmin_utm": 720000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 740000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 349.548,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_36_455",
+      "xmin_utm": 720000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 740000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_36_456",
+      "xmin_utm": 720000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 740000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_36_457",
+      "xmin_utm": 720000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 740000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 182.958,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_36_460",
+      "xmin_utm": 720000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 740000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 367.333,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_36_461",
+      "xmin_utm": 720000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 740000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 364.561,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_452",
+      "xmin_utm": 740000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 6.732,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_453",
+      "xmin_utm": 740000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 56.298,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_454",
+      "xmin_utm": 740000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 355.196,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_455",
+      "xmin_utm": 740000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_456",
+      "xmin_utm": 740000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 398.059,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_457",
+      "xmin_utm": 740000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 38.694,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_459",
+      "xmin_utm": 740000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 1.331,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_460",
+      "xmin_utm": 740000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 374.023,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_37_461",
+      "xmin_utm": 740000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 760000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 353.183,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_452",
+      "xmin_utm": 760000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 0.515,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_453",
+      "xmin_utm": 760000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 201.68,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_454",
+      "xmin_utm": 760000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_455",
+      "xmin_utm": 760000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_456",
+      "xmin_utm": 760000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_457",
+      "xmin_utm": 760000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 108.592,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_459",
+      "xmin_utm": 760000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 6.237,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_460",
+      "xmin_utm": 760000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 381.886,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_38_461",
+      "xmin_utm": 760000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 780000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 351.869,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_452",
+      "xmin_utm": 780000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 2.796,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_453",
+      "xmin_utm": 780000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 326.362,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_454",
+      "xmin_utm": 780000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_455",
+      "xmin_utm": 780000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_456",
+      "xmin_utm": 780000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_457",
+      "xmin_utm": 780000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 115.908,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_459",
+      "xmin_utm": 780000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 0.804,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_460",
+      "xmin_utm": 780000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 208.077,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_39_461",
+      "xmin_utm": 780000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 800000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 356.259,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_452",
+      "xmin_utm": 800000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 85.032,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_453",
+      "xmin_utm": 800000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 399.313,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_454",
+      "xmin_utm": 800000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_455",
+      "xmin_utm": 800000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_456",
+      "xmin_utm": 800000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_457",
+      "xmin_utm": 800000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 135.321,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_459",
+      "xmin_utm": 800000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 0.776,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_460",
+      "xmin_utm": 800000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 176.452,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_461",
+      "xmin_utm": 800000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 372.715,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_40_462",
+      "xmin_utm": 800000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 820000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 0.122,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_452",
+      "xmin_utm": 820000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 237.436,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_453",
+      "xmin_utm": 820000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_454",
+      "xmin_utm": 820000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_455",
+      "xmin_utm": 820000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_456",
+      "xmin_utm": 820000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_457",
+      "xmin_utm": 820000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 261.738,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_459",
+      "xmin_utm": 820000,
+      "ymin_utm": 9180000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9200000,
+      "luas_irisan_km2": 0.303,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_460",
+      "xmin_utm": 820000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 65.92,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_461",
+      "xmin_utm": 820000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 299.103,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_41_462",
+      "xmin_utm": 820000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 840000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 0.903,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_42_452",
+      "xmin_utm": 840000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 860000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 290.718,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_42_453",
+      "xmin_utm": 840000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 860000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_42_454",
+      "xmin_utm": 840000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 860000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_42_455",
+      "xmin_utm": 840000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 860000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_42_456",
+      "xmin_utm": 840000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 860000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 400.0,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_42_457",
+      "xmin_utm": 840000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 860000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 133.757,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_42_461",
+      "xmin_utm": 840000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 860000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 33.552,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_451",
+      "xmin_utm": 860000,
+      "ymin_utm": 9020000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9040000,
+      "luas_irisan_km2": 86.088,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_452",
+      "xmin_utm": 860000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 264.812,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_453",
+      "xmin_utm": 860000,
+      "ymin_utm": 9060000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9080000,
+      "luas_irisan_km2": 189.743,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_454",
+      "xmin_utm": 860000,
+      "ymin_utm": 9080000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9100000,
+      "luas_irisan_km2": 258.167,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_455",
+      "xmin_utm": 860000,
+      "ymin_utm": 9100000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9120000,
+      "luas_irisan_km2": 346.974,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_456",
+      "xmin_utm": 860000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 379.348,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_457",
+      "xmin_utm": 860000,
+      "ymin_utm": 9140000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9160000,
+      "luas_irisan_km2": 27.932,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_460",
+      "xmin_utm": 860000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 126.25,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_43_469",
+      "xmin_utm": 860000,
+      "ymin_utm": 9380000,
+      "xmax_utm": 880000,
+      "ymax_utm": 9400000,
+      "luas_irisan_km2": 16.182,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_44_451",
+      "xmin_utm": 880000,
+      "ymin_utm": 9020000,
+      "xmax_utm": 900000,
+      "ymax_utm": 9040000,
+      "luas_irisan_km2": 176.337,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_44_452",
+      "xmin_utm": 880000,
+      "ymin_utm": 9040000,
+      "xmax_utm": 900000,
+      "ymax_utm": 9060000,
+      "luas_irisan_km2": 37.269,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_44_456",
+      "xmin_utm": 880000,
+      "ymin_utm": 9120000,
+      "xmax_utm": 900000,
+      "ymax_utm": 9140000,
+      "luas_irisan_km2": 18.621,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_44_460",
+      "xmin_utm": 880000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 900000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 28.94,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_44_469",
+      "xmin_utm": 880000,
+      "ymin_utm": 9380000,
+      "xmax_utm": 900000,
+      "ymax_utm": 9400000,
+      "luas_irisan_km2": 10.6,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_44_471",
+      "xmin_utm": 880000,
+      "ymin_utm": 9420000,
+      "xmax_utm": 900000,
+      "ymax_utm": 9440000,
+      "luas_irisan_km2": 6.644,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_44_472",
+      "xmin_utm": 880000,
+      "ymin_utm": 9440000,
+      "xmax_utm": 900000,
+      "ymax_utm": 9460000,
+      "luas_irisan_km2": 1.118,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_45_460",
+      "xmin_utm": 900000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 920000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 3.875,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_45_471",
+      "xmin_utm": 900000,
+      "ymin_utm": 9420000,
+      "xmax_utm": 920000,
+      "ymax_utm": 9440000,
+      "luas_irisan_km2": 1.393,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_45_472",
+      "xmin_utm": 900000,
+      "ymin_utm": 9440000,
+      "xmax_utm": 920000,
+      "ymax_utm": 9460000,
+      "luas_irisan_km2": 0.592,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_48_461",
+      "xmin_utm": 960000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 980000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 143.499,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_48_462",
+      "xmin_utm": 960000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 980000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 30.095,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_49_461",
+      "xmin_utm": 980000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 1000000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 166.272,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_49_462",
+      "xmin_utm": 980000,
+      "ymin_utm": 9240000,
+      "xmax_utm": 1000000,
+      "ymax_utm": 9260000,
+      "luas_irisan_km2": 23.031,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_50_460",
+      "xmin_utm": 1000000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 1020000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 12.273,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_50_461",
+      "xmin_utm": 1000000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 1020000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 75.298,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_51_460",
+      "xmin_utm": 1020000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 1040000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 62.757,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_51_461",
+      "xmin_utm": 1020000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 1040000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 6.236,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_52_460",
+      "xmin_utm": 1040000,
+      "ymin_utm": 9200000,
+      "xmax_utm": 1060000,
+      "ymax_utm": 9220000,
+      "luas_irisan_km2": 5.826,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_52_461",
+      "xmin_utm": 1040000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 1060000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 4.102,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_53_461",
+      "xmin_utm": 1060000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 1080000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 1.076,
+      "komposit_tersedia": false
+    },
+    {
+      "blok_id": "B_54_461",
+      "xmin_utm": 1080000,
+      "ymin_utm": 9220000,
+      "xmax_utm": 1100000,
+      "ymax_utm": 9240000,
+      "luas_irisan_km2": 4.687,
+      "komposit_tersedia": false
+    }
+  ]
+}

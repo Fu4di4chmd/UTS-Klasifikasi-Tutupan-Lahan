@@ -1,0 +1,16 @@
+{
+  "jenis": "Audit probabilitas air Dynamic World terhadap hasil RF 19 fitur",
+  "peringatan": "Referensi bukan ground truth; tidak dilakukan perubahan klasifikasi.",
+  "piksel_rf_water_total": 255197,
+  "rf_water_dw_ge_70": 43075,
+  "rf_water_dw_20_69": 76912,
+  "rf_water_dw_lt_20": 135001,
+  "rf_water_tanpa_referensi": 209,
+  "piksel_rf_non_water": 4540575,
+  "threshold_probabilitas": {
+    "kuat": ">=70",
+    "belum_pasti": "20-69",
+    "rendah": "<20"
+  },
+  "catatan": "Nilai Dynamic World dari komposit median yang disampel ke 100m, bukan rata-rata 10m."
+}

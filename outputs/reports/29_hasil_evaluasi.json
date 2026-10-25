@@ -1,0 +1,9 @@
+{
+  "accuracy_pixel": 0.9653607623657541,
+  "balanced_accuracy_pixel": 0.9501415079256919,
+  "accuracy_poligon": 1.0,
+  "jumlah_training": 27886,
+  "jumlah_testing": 6611,
+  "poligon_training": 120,
+  "poligon_testing": 31
+}
