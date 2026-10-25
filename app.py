@@ -51,6 +51,7 @@ MAPS = BASE / "outputs" / "maps"
 EXPERIMENT_REPORTS = REPORTS / "eksperimen_sampling_poligon"
 # Prioritaskan peta 100 m berbasis model RF 19 fitur, bukan peta sampling 14 fitur.
 PETA_100M_PILIHAN = [
+    MAPS / "peta_interaktif_rf19_sawah_dipulihkan.html",
     MAPS / "peta_interaktif_rf19_tanpa_mangrove_palsu.html",
     MAPS / "peta_interaktif_rf19_waterbody_koreksi.html",
     MAPS / "peta_interaktif_rf19_screening.html",
@@ -260,6 +261,21 @@ def server_peta_lokal():
 
 
 def url_peta_20m():
+    # Jika tile telah di-host melalui HTTPS, atur PETA_20M_URL pada
+    # Streamlit Cloud -> App settings -> Secrets.
+    # Contoh: PETA_20M_URL = "https://domain.example/peta/index_kelas.html"
+    try:
+        url_online = str(st.secrets.get("PETA_20M_URL", "")).strip()
+    except (FileNotFoundError, KeyError):
+        url_online = ""
+    if url_online:
+        if not url_online.startswith("https://"):
+            st.warning("PETA_20M_URL harus menggunakan HTTPS agar dapat dimuat pada website online.")
+            return None
+        return url_online
+
+    # Mode lokal: hanya bekerja di browser pada komputer yang menjalankan
+    # Streamlit. Browser di HP / Streamlit Cloud tidak dapat memakai 127.0.0.1 ini.
     srv = server_peta_lokal()
     if srv is None:
         return None
@@ -392,7 +408,7 @@ elif halaman == "Evaluation":
                 "Testing poligon": [metrics['jumlah_poligon_testing'], metrics_20m['poligon_testing']],
             })
             st.dataframe(baris, hide_index=True, use_container_width=True)
-            st.bar_chart(baris.set_index("Model")[["Accuracy (%)", "Balanced accuracy (%)"]])
+            st.bar_chart(baris.set_index("Model")[["Accuracy (%)", "Balanced accuracy (%)"]], stack=False)
             st.write(f"Selisih accuracy pengujian: **{(metrics['accuracy'] - metrics_20m['accuracy_pixel'])*100:.2f} poin persentase**, lebih tinggi pada set uji model 100 m. Namun data latih, pembagian testing, komposit, dan parameter model tidak identik.")
         else:
             st.warning("Perbandingan memerlukan kedua file metrik JSON.")
@@ -405,7 +421,7 @@ elif halaman == "Peta Interaktif":
     html_100=baca_peta()
     path_100=next((p for p in PETA_100M_PILIHAN if p.is_file()), None)
     path_20=MAPS/"peta_interaktif_jatim"/"index_kelas.html"
-    url_20=url_peta_20m() if path_20.exists() else None
+    url_20=url_peta_20m()
     tab_a,tab_b,tab_c=st.tabs(["Hasil eksperimen 100 m", "Hasil Python 20 m", "Perbandingan berdampingan"])
     with tab_a:
         st.subheader("Peta GEE–Python 100 m — pastikan versi raster sesuai")
@@ -416,11 +432,11 @@ elif halaman == "Peta Interaktif":
             st.warning("Peta RF 100 m 19 fitur belum ditemukan. Periksa berkas peta_interaktif_rf19_*.html atau peta_interaktif_rf.html dalam outputs/maps. File sampling 14 fitur tidak otomatis dijadikan peta 19 fitur.")
     with tab_b:
         st.subheader("Random Forest Python — 20 m, 19 fitur")
-        if path_20.exists() and url_20:
+        if url_20:
             components.iframe(url_20,height=730,scrolling=False)
-            st.caption("Tile peta disajikan otomatis oleh aplikasi Streamlit; tidak perlu menjalankan server port 8000 terpisah. Berjalan pada laptop yang sama.")
+            st.caption("Peta 20 m memakai hosting HTTPS jika PETA_20M_URL tersedia, atau server tile lokal saat dijalankan di laptop.")
         else:
-            st.warning("Peta 20 m belum ditemukan di outputs/maps/peta_interaktif_jatim/index_kelas.html")
+            st.warning("Peta 20 m belum tersedia secara online. Hosting tile peta belum dikonfigurasi melalui PETA_20M_URL, atau folder lokal tidak tersedia.")
     with tab_c:
         a,b=st.columns(2)
         with a:
@@ -429,7 +445,7 @@ elif halaman == "Peta Interaktif":
             else: st.warning("Peta eksperimen belum ada")
         with b:
             st.markdown("**20 m — Python**")
-            if path_20.exists() and url_20: components.iframe(url_20,height=560,scrolling=False)
+            if url_20: components.iframe(url_20,height=560,scrolling=False)
             else: st.warning("Peta 20 m belum ada")
     st.warning("Klasifikasi merupakan hasil prediksi. Kesalahan label di wilayah perairan, hutan, dan mangrove masih perlu diperiksa secara geografis.")
 
