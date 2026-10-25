@@ -10,6 +10,7 @@
 
 
 from pathlib import Path
+from urllib.parse import urlsplit
 
 import json
 import threading
@@ -282,6 +283,41 @@ def url_peta_20m():
     return f"http://127.0.0.1:{srv.server_port}/index_kelas.html"
 
 
+def html_peta_20m_statis():
+    """Peta leaflet menggunakan PNG yang di-host oleh static serving Streamlit."""
+    folder = BASE / "static" / "peta20m"
+    html_path = folder / "index_kelas.html"
+    if not html_path.is_file() or not (folder / "kelas_tiles").is_dir():
+        return None
+    try:
+        alamat = urlsplit(st.context.url)
+        if not alamat.scheme or not alamat.netloc:
+            return None
+        url_tile = f"{alamat.scheme}://{alamat.netloc}/app/static/peta20m/"
+        html = html_path.read_text(encoding="utf-8")
+        # URL absolut dibutuhkan karena components.html memakai iframe.
+        for nama in ("builtup", "farmland", "water", "forest", "mangrove"):
+            html = html.replace(f'"kelas_tiles/{nama}/', f'"{url_tile}kelas_tiles/{nama}/')
+            html = html.replace(f"'kelas_tiles/{nama}/", f"'{url_tile}kelas_tiles/{nama}/")
+        html = html.replace('"tiles/', f'"{url_tile}tiles/')
+        html = html.replace("'tiles/", f"'{url_tile}tiles/")
+        return html
+    except (OSError, ValueError):
+        return None
+
+
+def tampil_peta_20m(tinggi):
+    html = html_peta_20m_statis()
+    if html:
+        components.html(html, height=tinggi, scrolling=False)
+        return True
+    url = url_peta_20m()
+    if url:
+        components.iframe(url, height=tinggi, scrolling=False)
+        return True
+    return False
+
+
 luas_20m = baca_luas_20m()
 metrics_20m, sumber_metrics_20m = baca_laporan_20m()
 
@@ -421,7 +457,6 @@ elif halaman == "Peta Interaktif":
     html_100=baca_peta()
     path_100=next((p for p in PETA_100M_PILIHAN if p.is_file()), None)
     path_20=MAPS/"peta_interaktif_jatim"/"index_kelas.html"
-    url_20=url_peta_20m()
     tab_a,tab_b,tab_c=st.tabs(["Hasil eksperimen 100 m", "Hasil Python 20 m", "Perbandingan berdampingan"])
     with tab_a:
         st.subheader("Peta GEE–Python 100 m — pastikan versi raster sesuai")
@@ -432,11 +467,10 @@ elif halaman == "Peta Interaktif":
             st.warning("Peta RF 100 m 19 fitur belum ditemukan. Periksa berkas peta_interaktif_rf19_*.html atau peta_interaktif_rf.html dalam outputs/maps. File sampling 14 fitur tidak otomatis dijadikan peta 19 fitur.")
     with tab_b:
         st.subheader("Random Forest Python — 20 m, 19 fitur")
-        if url_20:
-            components.iframe(url_20,height=730,scrolling=False)
-            st.caption("Peta 20 m memakai hosting HTTPS jika PETA_20M_URL tersedia, atau server tile lokal saat dijalankan di laptop.")
+        if tampil_peta_20m(730):
+            st.caption("Peta 20 m: lima layer dapat diaktifkan/dinonaktifkan secara terpisah.")
         else:
-            st.warning("Peta 20 m belum tersedia secara online. Hosting tile peta belum dikonfigurasi melalui PETA_20M_URL, atau folder lokal tidak tersedia.")
+            st.warning("Peta 20 m belum siap. Jalankan SIAPKAN_PETA_20M.ps1 untuk menyiapkan folder static/peta20m.")
     with tab_c:
         a,b=st.columns(2)
         with a:
@@ -445,8 +479,7 @@ elif halaman == "Peta Interaktif":
             else: st.warning("Peta eksperimen belum ada")
         with b:
             st.markdown("**20 m — Python**")
-            if url_20: components.iframe(url_20,height=560,scrolling=False)
-            else: st.warning("Peta 20 m belum ada")
+            if not tampil_peta_20m(560): st.warning("Peta 20 m belum ada")
     st.warning("Klasifikasi merupakan hasil prediksi. Kesalahan label di wilayah perairan, hutan, dan mangrove masih perlu diperiksa secara geografis.")
 
 elif halaman == "Kesimpulan":
