@@ -306,16 +306,21 @@ def html_peta_20m_statis():
         return None
 
 
-def tampil_peta_20m(tinggi):
-    html = html_peta_20m_statis()
-    if html:
-        components.html(html, height=tinggi, scrolling=False)
-        return True
-    url = url_peta_20m()
-    if url:
-        components.iframe(url, height=tinggi, scrolling=False)
-        return True
-    return False
+def tampil_peta_20m(tinggi=730):
+    """Gunakan server lokal saat demo di laptop; GitHub Pages saat online."""
+    url = "https://fu4di4chmd.github.io/UTS-Klasifikasi-Tutupan-Lahan/index_kelas.html"
+    try:
+        host = urlsplit(st.context.url).hostname or ""
+    except (AttributeError, ValueError):
+        host = ""
+
+    if host in ("localhost", "127.0.0.1"):
+        url_lokal = url_peta_20m()
+        if url_lokal:
+            url = url_lokal
+
+    components.iframe(url, height=tinggi, scrolling=False)
+    return True
 
 
 luas_20m = baca_luas_20m()
